@@ -1,4 +1,8 @@
 {
   "image": "go-dev:latest",
-  "mounts": [ "source=/home/pwolf/.ssh,target=/root/.ssh,type=bind" ]
+  "workspaceFolder": "/app/go-dev",
+  "mounts": [ 
+	  "source=/home/pwolf/.ssh,target=/root/.ssh,type=bind",
+	  "source=go-dev,target=/app/go-dev,type=volume"
+  ]
 }
